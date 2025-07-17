@@ -25,8 +25,8 @@ public class LancheController {
     @GetMapping("/{id}")
     public ResponseEntity<Lanche> buscarPorId(@PathVariable Long id) {
         return service.buscarPorId(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+            .map(ResponseEntity::ok)
+            .orElse(ResponseEntity.notFound().build());
     }
 
     @PostMapping
