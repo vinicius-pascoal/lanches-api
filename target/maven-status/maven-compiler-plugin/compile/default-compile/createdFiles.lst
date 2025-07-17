@@ -1,1 +1,5 @@
-com\example\lanches_api\LanchesApiApplication.class
+com\exemplo\lanchesapi\LanchesApiApplication.class
+com\exemplo\lanchesapi\controller\LancheController.class
+com\exemplo\lanchesapi\model\Lanche.class
+com\exemplo\lanchesapi\repository\LancheRepository.class
+com\exemplo\lanchesapi\service\LancheService.class

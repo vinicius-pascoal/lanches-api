@@ -45,10 +45,10 @@ public class LancheController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deletar(@PathVariable Long id) {
+    public ResponseEntity<Object> deletar(@PathVariable Long id) {
         return service.buscarPorId(id).map(l -> {
             service.deletar(id);
             return ResponseEntity.noContent().build();
         }).orElse(ResponseEntity.notFound().build());
-    }
+}
 }
